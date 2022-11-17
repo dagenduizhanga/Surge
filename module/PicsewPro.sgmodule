@@ -1,0 +1,12 @@
+#!name=Picsew专业版
+#!desc=解锁VIP
+#更新时间:2022-10-14
+#使用声明：️仅供学习交流，🈲️商业用途
+#没试，很早买了会员
+
+[Script]
+Picsew解锁专业版 = type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/dagenduizhanga/Surge/master/js/PicsewPro.js
+
+
+[MITM]
+hostname= %APPEND% buy.itunes.apple.com
