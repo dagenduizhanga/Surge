@@ -1,0 +1,13 @@
+#!name=全能二维码
+#!desc=解锁vip
+#软件版本:2.2
+#脚本作者:彭于晏💞
+#更新时间:2022-11-18
+#使用声明：此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
+
+[Script]
+全能二维码——解锁订阅
+ = type=http-response,pattern=^https:\/\/qr\.duomihongbao\.cn\/qr\/code\/getMember,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/dagenduizhanga/Surge/master/js/qnewm.js
+
+[MITM]
+hostname= %APPEND% qr.duomihongbao.cn
