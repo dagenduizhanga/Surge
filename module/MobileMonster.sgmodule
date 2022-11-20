@@ -8,3 +8,6 @@
 [Script]
 手机硬件管家+解锁订阅 = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(\$RCAnonymousID%)?(\w)*$),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/dagenduizhanga/Surge/master/js/MobileMonster.js
 
+[mitm]
+
+hostname=api.revenuecat.com
