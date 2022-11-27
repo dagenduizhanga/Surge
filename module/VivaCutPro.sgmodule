@@ -1,0 +1,13 @@
+#!name=VivaCut解锁永久订阅
+#!desc=解锁vip
+#软件版本:3.0.0
+#脚本作者:Hausd0rff
+#更新时间:2022-11-20
+#电报频道:https://t.me/yqc_123
+#使用声明：️仅供学习交流，🈲️商业用途
+
+[Script]
+VivaCut解锁永久订阅 = type=http-response,pattern=^https?:\/\/medi\.dxzzy321\.top\/api\/rest\/commerce\/integrate\/vip\/perform$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/dagenduizhanga/Surge/master/js/VivaCutPro.js
+
+[MITM]
+hostname= %APPEND% medi.dxzzy321.top
