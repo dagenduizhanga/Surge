@@ -1,0 +1,8 @@
+#!name=TopWidgets-小组件
+#!desc=解锁vip
+
+[Script]
+TopWidgets-小组件+解锁订阅 = type=http-response,pattern=^https:\/\/top-widgets-api\.xiaozujian\.com\/api\/app\/config\/userConfig,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/dagenduizhanga/Surge/master/js/widgets.js
+
+[MITM]
+hostname= %APPEND% top-widgets-api.xiaozujian.com
