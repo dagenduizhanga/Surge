@@ -2,12 +2,14 @@
 #!desc=解锁vip
 
 [MITM]
-hostname= %APPEND% api.revenuecat.com,ars.alar.my,buy.itunes.apple.com,dayone.app,dida365.com,api.tipsoon.com,medi.dxzzy321.top,ap*.intsig.net,top-widgets-api.xiaozujian.com
+hostname= %APPEND% api.revenuecat.com,ars.alar.my,buy.itunes.apple.com,dayone.app,dida365.com, ticktick.com,api.tipsoon.com,medi.dxzzy321.top,ap*.intsig.net,top-widgets-api.xiaozujian.com
 
 [Script]
 ##APTV-+解锁订阅 = type=http-response,pattern=https://api.revenuecat.com/v1/(receipts|subscribers)/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/dagenduizhanga/Surge/master/js/APTV.js
 
 Alarmy = type=http-response,pattern=^https://ars.alar.my/api/v2/user/sync,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/dagenduizhanga/Surge/master/js/Alarmy.js
+
+滴答清单=type=http-response,pattern=^https:\/\/(ticktick|dida365)\.com\/api\/v2\/user\/status,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/dagenduizhanga/Surge/master/js/ddqd.js,script-update-interval=0
 
 熊掌记- Markdown+解锁订阅 = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/dagenduizhanga/Surge/master/js/bear.js
 
